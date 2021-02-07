@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(64, 113, 247);
+}
+#sexrchPosition{
+    text-align: center;
+    padding: 20px;
+    
+}
+.food-block{
+    background-color: rgb(236, 203, 164);
+  border: 1px solid rgb(22, 146, 230);
+  border-radius:20px;
+  
+  
+  /*border: 2px solid rgb(2, 2, 53);
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -ms-border-radius:20px;
+  -o-border-radius:20px;
+  */:;
+}
+#meals-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid gap: 10px;
+    
+}
+.food-block img{
+    height: 200px;
+    width: 250px;
+    padding: 20px;
+
+}
+h3{
+    text-align: center;
+}
