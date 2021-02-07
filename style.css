@@ -31,4 +31,9 @@ img{
 .meal-containerr{
     border: red solid 2px;
     background-color: aqua;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }

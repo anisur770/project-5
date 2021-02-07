@@ -4,7 +4,7 @@ document.getElementById('search-btn').addEventListener(
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`)
       .then((res) => res.json())
       .then((data) => displayMeals(data.meals))
-      .catch((error) => alert("did not match any documents."));
+      .catch((error) => alert("Did not match any foods items."));
     }
 )
 const displayMeals = meal => {
@@ -23,7 +23,6 @@ const displayMeals = meal => {
         ul.appendChild(foodList);
     }
 }
-
 const foodListDetails = name => {
     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${name}`;
     fetch(url)
@@ -43,6 +42,5 @@ const foodInfo = food => {
         <li>${food.strIngredient3}</li>
         <li>${food.strIngredient4}</li>
         <li>${food.strIngredient5}</li>
-    `;
-    
+    `;   
 }
